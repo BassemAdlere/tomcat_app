@@ -33,5 +33,5 @@ To add an admin user for Tomcat, you need to edit the tomcat-users.xml file:
 $ cd /usr/local/tomcat9/
 $ vim conf/tomcat-users.xml
 
-<role rolename="admin-gui,manager-gui"/>
-<user username="admin" password="YOURPASSWORDHERE" roles="admin-gui,manager-gui"/>
+<role rolename="admin-gui,manager-gui" >
+<user username="admin" password="YOURPASSWORDHERE" roles="admin-gui,manager-gui" >
