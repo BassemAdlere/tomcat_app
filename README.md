@@ -20,7 +20,7 @@ project. To learn more about getting involved,
 ##  install the java-11-openjdk-devel package:
 $ sudo dnf install java-11-openjdk-devel
 
-latest version of Tomcat 9:
+- latest version of Tomcat 9:
 https://tomcat.apache.org/download-90.cgi
 
 $ wget  URL-YOU-COPIED-EARLIER.tar.gz
@@ -28,7 +28,7 @@ $ tar -xvf /home/cloud_user/THE-TOMCAT-FILE-YOU-COPIED-COPIED-EARLIER
 $ useradd -r tomcat
 $ chown -R tomcat:tomcat /usr/local/tomcat9
 
-To add an admin user for Tomcat, you need to edit the tomcat-users.xml file:
+- To add an admin user for Tomcat, you need to edit the tomcat-users.xml file:
 
 $ cd /usr/local/tomcat9/
 
@@ -37,3 +37,8 @@ $ vim conf/tomcat-users.xml
 role rolename="admin-gui,manager-gui" 
 
 user username="admin" password="YOURPASSWORDHERE" roles="admin-gui,manager-gui" 
+
+- allow access to the management web pages from the internet
+
+allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1|.*" 
+
