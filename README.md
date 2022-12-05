@@ -31,6 +31,7 @@ $ chown -R tomcat:tomcat /usr/local/tomcat9
 To add an admin user for Tomcat, you need to edit the tomcat-users.xml file:
 
 $ cd /usr/local/tomcat9/
+
 $ vim conf/tomcat-users.xml
 
 <role rolename="admin-gui,manager-gui" >
